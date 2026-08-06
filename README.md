@@ -1,82 +1,252 @@
 # SimLab-lite
 
-SimLab-lite is a conversational social marketing simulation engine for Codex, ChatGPT Code and Claude.
+> Motor conversacional de simulación social para marketing.
+> Diseñado para usarse dentro de Codex, ChatGPT Code o Claude, sin app, sin backend y sin dashboard obligatorio.
 
-It is not an app, backend or dashboard. It is a lightweight operating system for marketing war rooms: build a small simulated market, run social reaction rounds, interview agents, map causal hypotheses and end with decisions plus experiments.
+SimLab-lite convierte un brief de marketing en una simulación social estructurada: crea agentes pequeños, corre rondas de reacción, entrevista perfiles clave, organiza hipótesis causales y termina en un war room estratégico con decisiones y experimentos.
 
-## What It Does
+No pretende adivinar el mercado. Sirve para pensar mejor antes de gastar dinero, ordenar supuestos, detectar fricción social y diseñar pruebas con disciplina causal.
 
-- Turns a marketing brief into a structured social simulation.
-- Creates 15-30 synthetic market agents.
-- Runs 3-5 social reaction rounds.
-- Interviews promoters, skeptics, blockers, influencers and ambiguous agents.
-- Builds causal hypotheses from simulated behavior.
-- Prescribes strategic moves and experiments.
-- Stores local session memory in case folders.
-
-## Repository Structure
+## Qué Es
 
 ```text
-SKILL.md
-agents/openai.yaml
-references/
-  workflow.md
-  agent_bank.md
-  causal_prescriptive.md
-  operator_playbook.md
-scripts/
-  create_case.py
-  validate_case.py
-  write_demo_case.py
-assets/
-  templates/
-  demo_case/
+Brief de marketing
+       |
+       v
+Mapa social del mercado
+       |
+       v
+15-30 agentes sintéticos
+       |
+       v
+Rondas de reacción social
+       |
+       v
+Entrevistas a agentes clave
+       |
+       v
+Hipótesis causales
+       |
+       v
+Decisiones + experimentos
+       |
+       v
+War room estratégico final
 ```
 
-## Quick Use
+## Para Qué Sirve
 
-Use the skill in Codex with a prompt like:
+SimLab-lite es útil cuando necesitas explorar preguntas como:
 
-```text
-Simulemos socialmente esta campaña de marketing.
-Quiero 18 agentes, 5 rondas, entrevistas, mapa causal, prescripciones y experimentos.
-Guarda memoria local del caso.
-```
+- Qué audiencia podría activar o bloquear una campaña.
+- Qué objeciones aparecerían antes de invertir pauta.
+- Qué mensaje puede cambiar intención, confianza o urgencia.
+- Qué segmentos reaccionan distinto ante precio, promesa, canal o prueba social.
+- Qué experimentos conviene correr primero.
+- Qué decisiones estratégicas tienen mayor potencial y menor riesgo.
 
-## Create A Case
+## Lo Que Incluye
+
+| Componente | Función |
+|---|---|
+| `SKILL.md` | Instrucciones principales para que Codex use el simulador como skill conversacional. |
+| `agents/openai.yaml` | Configuración de agente para Codex/OpenAI. |
+| `references/workflow.md` | Flujo completo de operación por fases. |
+| `references/agent_bank.md` | Banco de 24 arquetipos de agentes de marketing. |
+| `references/causal_prescriptive.md` | Marco causal y prescriptivo para decisiones y experimentos. |
+| `references/operator_playbook.md` | Guía práctica para correr sesiones, recalibrar y cerrar casos. |
+| `assets/templates/` | Plantillas locales para cada sesión. |
+| `assets/demo_case/` | Caso de demostración ya completo. |
+| `scripts/create_case.py` | Crea una carpeta de caso con memoria local. |
+| `scripts/validate_case.py` | Valida si un caso está completo. |
+| `scripts/write_demo_case.py` | Genera el caso demo incluido. |
+
+## Instalación
+
+### Opción 1: Usarlo como repo normal
+
+Clona el repositorio:
 
 ```bash
-python scripts/create_case.py mi-campana --root cases --agents 18
+git clone https://github.com/Marcelo7225/SimLab-lite.git
+cd SimLab-lite
 ```
 
-## Validate A Case
-
-```bash
-python scripts/validate_case.py cases/mi-campana --json
-```
-
-## Demo
-
-The included demo case validates as complete:
+Verifica que todo funcione:
 
 ```bash
 python scripts/validate_case.py assets/demo_case --json
 ```
 
-Expected result:
+Si ves `"status": "complete"` y `"completion_score": 100`, el simulador está listo.
 
-```json
-{
-  "status": "complete",
-  "completion_score": 100
-}
+### Opción 2: Instalarlo como skill local de Codex
+
+Clona el repo dentro de tu carpeta de skills:
+
+```bash
+cd ~/.codex/skills
+git clone https://github.com/Marcelo7225/SimLab-lite.git social-marketing-sim
 ```
 
-## Philosophy
+Luego abre Codex y pídele algo como:
 
-The simulation generates hypotheses.  
-The causal layer organizes mechanisms.  
-The prescriptive layer decides what to test.
+```text
+Usa social-marketing-sim.
+Simulemos una campaña de marketing para una nueva oferta B2B.
+Quiero 20 agentes, 5 rondas, entrevistas, mapa causal, decisiones y experimentos.
+```
 
-Do not treat synthetic agents as real-world evidence. Use this to think better before spending money on campaigns.
+Codex leerá el `SKILL.md`, usará las referencias necesarias y podrá crear archivos locales por sesión.
+
+### Opción 3: Usarlo en Claude o ChatGPT Code sin instalar skill
+
+También puedes usarlo como paquete de instrucciones:
+
+1. Clona o descarga este repositorio.
+2. Abre el archivo `SKILL.md`.
+3. Copia sus instrucciones principales en tu conversación.
+4. Adjunta o referencia estos archivos cuando quieras más estructura:
+   - `references/workflow.md`
+   - `references/agent_bank.md`
+   - `references/causal_prescriptive.md`
+   - `references/operator_playbook.md`
+5. Pide que cree una carpeta de caso usando las plantillas de `assets/templates/`.
+
+Prompt recomendado:
+
+```text
+Quiero correr SimLab-lite como motor conversacional.
+Usa el flujo del SKILL.md y las referencias del repo.
+Crea una simulación social de marketing con memoria local por sesión,
+agentes sintéticos, rondas, entrevistas, hipótesis causales,
+prescripciones y war room final.
+```
+
+## Uso Rápido
+
+Crear un caso vacío:
+
+```bash
+python scripts/create_case.py mi-campana --root cases --agents 18
+```
+
+Validar el caso:
+
+```bash
+python scripts/validate_case.py cases/mi-campana --json
+```
+
+Validar el demo:
+
+```bash
+python scripts/validate_case.py assets/demo_case --json
+```
+
+Generar de nuevo el demo:
+
+```bash
+python scripts/write_demo_case.py
+```
+
+## Estructura De Un Caso
+
+Cada sesión puede vivir en una carpeta local con esta forma:
+
+```text
+cases/mi-campana/
+  00_brief.md
+  01_social_map.md
+  02_agents.json
+  03_rounds.jsonl
+  04_interviews.md
+  05_causal_map.md
+  06_prescriptions.md
+  07_experiments.md
+  08_war_room_final.md
+  CASE_INDEX.md
+  session.json
+  memory/
+    facts.json
+    assumptions.json
+    unresolved_questions.json
+    decisions.jsonl
+    checkpoints.jsonl
+```
+
+## Flujo De Trabajo
+
+1. **Brief**
+   Define oferta, mercado, audiencia, objetivo, restricciones y señales disponibles.
+
+2. **Mapa social**
+   Identifica grupos, tensiones, canales, incentivos, fricciones y presión social.
+
+3. **Agentes**
+   Crea entre 15 y 30 perfiles pequeños con motivaciones, objeciones, contexto y sensibilidad a mensajes.
+
+4. **Rondas**
+   Simula exposición, reacción, conversación, contagio, bloqueo, reconsideración y decisión.
+
+5. **Entrevistas**
+   Pregunta a promotores, escépticos, bloqueadores, ambiguos e influenciadores qué cambió y qué no.
+
+6. **Causalidad**
+   Traduce patrones en hipótesis: variable de intervención, mecanismo, resultado esperado, moderadores y riesgos.
+
+7. **Prescripción**
+   Convierte hipótesis en decisiones, secuencia táctica y experimentos medibles.
+
+8. **War room**
+   Cierra con una lectura estratégica viva, pero disciplinada: qué hacer, qué no hacer, qué probar y qué observar.
+
+## Salida Final Esperada
+
+Un buen cierre de SimLab-lite debe incluir:
+
+- Decisiones recomendadas.
+- Decisiones descartadas o pospuestas.
+- Hipótesis causales priorizadas.
+- Experimentos de marketing.
+- Segmentos sensibles.
+- Mensajes con potencial.
+- Objeciones críticas.
+- Riesgos de interpretación.
+- Señales que deberían medirse en el mundo real.
+
+## Principios
+
+- La simulación no es evidencia real.
+- Los agentes sintéticos no reemplazan clientes.
+- La causalidad se formula como hipótesis, no como certeza.
+- La prescripción debe terminar en experimentos observables.
+- La memoria local existe para que la sesión no se vuelva humo conversacional.
+
+## Ejemplo De Prompt Completo
+
+```text
+Usa SimLab-lite para simular socialmente esta campaña:
+
+Oferta: asesoría de automatización comercial para pymes B2B.
+Mercado: Colombia.
+Objetivo: generar demos calificadas.
+Audiencia: dueños, gerentes comerciales y líderes de operación.
+Canales: LinkedIn, WhatsApp, referidos y email.
+Restricción: presupuesto limitado, máximo 4 semanas.
+
+Quiero:
+- 20 agentes.
+- 5 rondas de reacción social.
+- Entrevistas a perfiles extremos y ambiguos.
+- Mapa causal.
+- Decisiones prescriptivas.
+- 5 experimentos.
+- War room final con disciplina causal.
+```
+
+## Estado Del Proyecto
+
+SimLab-lite está pensado como versión limpia y ligera, inspirada en ideas de simulación social y sistemas causales/prescriptivos, pero enfocada en uso conversacional.
+
+No incluye interfaz gráfica, servidor, base de datos ni ejecución estadística pesada. Su valor está en la estructura: ayuda a pensar una campaña como un sistema social, no solo como una lista de copies.
 
