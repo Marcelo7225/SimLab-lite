@@ -1,0 +1,456 @@
+{
+  "case_name": "Educacion Online Colombia",
+  "agent_count": 18,
+  "agents": [
+    {
+      "agent_id": "A01",
+      "name": "Profesional presionada",
+      "segment": "Profesional presionado",
+      "role": "compradora probable",
+      "motivations": [
+        "mejorar empleabilidad",
+        "reducir incertidumbre"
+      ],
+      "objections": [
+        "certificado generico",
+        "falta de tiempo",
+        "ROI poco claro"
+      ],
+      "influence_level": 0.4,
+      "risk_sensitivity": 0.75,
+      "price_sensitivity": 0.5,
+      "channel_habits": [
+        "LinkedIn"
+      ],
+      "baseline_belief": "Quiere evidencia concreta antes de dejar datos o pagar.",
+      "decision_trigger": "Prueba local de habilidad aplicable y resultado plausible.",
+      "likely_reaction": "interes condicionado",
+      "notes": "Agente sintetico para simulacion, no dato real."
+    },
+    {
+      "agent_id": "A02",
+      "name": "Investigador silencioso",
+      "segment": "Investigador silencioso",
+      "role": "neutral",
+      "motivations": [
+        "mejorar empleabilidad",
+        "reducir incertidumbre"
+      ],
+      "objections": [
+        "certificado generico",
+        "falta de tiempo",
+        "ROI poco claro"
+      ],
+      "influence_level": 0.4,
+      "risk_sensitivity": 0.75,
+      "price_sensitivity": 0.5,
+      "channel_habits": [
+        "Google Search"
+      ],
+      "baseline_belief": "Quiere evidencia concreta antes de dejar datos o pagar.",
+      "decision_trigger": "Prueba local de habilidad aplicable y resultado plausible.",
+      "likely_reaction": "interes condicionado",
+      "notes": "Agente sintetico para simulacion, no dato real."
+    },
+    {
+      "agent_id": "A03",
+      "name": "Esceptico de certificados",
+      "segment": "Esceptico informado",
+      "role": "esceptico",
+      "motivations": [
+        "mejorar empleabilidad",
+        "reducir incertidumbre"
+      ],
+      "objections": [
+        "certificado generico",
+        "falta de tiempo",
+        "ROI poco claro"
+      ],
+      "influence_level": 0.4,
+      "risk_sensitivity": 0.75,
+      "price_sensitivity": 0.5,
+      "channel_habits": [
+        "LinkedIn"
+      ],
+      "baseline_belief": "Quiere evidencia concreta antes de dejar datos o pagar.",
+      "decision_trigger": "Prueba local de habilidad aplicable y resultado plausible.",
+      "likely_reaction": "resistencia inicial",
+      "notes": "Agente sintetico para simulacion, no dato real."
+    },
+    {
+      "agent_id": "A04",
+      "name": "Aspiracional selectiva",
+      "segment": "Aspiracional selectivo",
+      "role": "receptiva",
+      "motivations": [
+        "mejorar empleabilidad",
+        "reducir incertidumbre"
+      ],
+      "objections": [
+        "certificado generico",
+        "falta de tiempo",
+        "ROI poco claro"
+      ],
+      "influence_level": 0.4,
+      "risk_sensitivity": 0.75,
+      "price_sensitivity": 0.5,
+      "channel_habits": [
+        "Instagram"
+      ],
+      "baseline_belief": "Quiere evidencia concreta antes de dejar datos o pagar.",
+      "decision_trigger": "Prueba local de habilidad aplicable y resultado plausible.",
+      "likely_reaction": "interes condicionado",
+      "notes": "Agente sintetico para simulacion, no dato real."
+    },
+    {
+      "agent_id": "A05",
+      "name": "Decisor financiero personal",
+      "segment": "Decisor financiero",
+      "role": "bloqueador economico",
+      "motivations": [
+        "mejorar empleabilidad",
+        "reducir incertidumbre"
+      ],
+      "objections": [
+        "certificado generico",
+        "falta de tiempo",
+        "ROI poco claro"
+      ],
+      "influence_level": 0.4,
+      "risk_sensitivity": 0.75,
+      "price_sensitivity": 0.5,
+      "channel_habits": [
+        "Google Search"
+      ],
+      "baseline_belief": "Quiere evidencia concreta antes de dejar datos o pagar.",
+      "decision_trigger": "Prueba local de habilidad aplicable y resultado plausible.",
+      "likely_reaction": "resistencia inicial",
+      "notes": "Agente sintetico para simulacion, no dato real."
+    },
+    {
+      "agent_id": "A06",
+      "name": "Recomendado confiado",
+      "segment": "Recomendado confiado",
+      "role": "comprador por referido",
+      "motivations": [
+        "mejorar empleabilidad",
+        "reducir incertidumbre"
+      ],
+      "objections": [
+        "certificado generico",
+        "falta de tiempo",
+        "ROI poco claro"
+      ],
+      "influence_level": 0.4,
+      "risk_sensitivity": 0.75,
+      "price_sensitivity": 0.5,
+      "channel_habits": [
+        "WhatsApp"
+      ],
+      "baseline_belief": "Quiere evidencia concreta antes de dejar datos o pagar.",
+      "decision_trigger": "Prueba local de habilidad aplicable y resultado plausible.",
+      "likely_reaction": "interes condicionado",
+      "notes": "Agente sintetico para simulacion, no dato real."
+    },
+    {
+      "agent_id": "A07",
+      "name": "Compradora tecnica",
+      "segment": "Comprador tecnico",
+      "role": "evaluadora",
+      "motivations": [
+        "mejorar empleabilidad",
+        "reducir incertidumbre"
+      ],
+      "objections": [
+        "certificado generico",
+        "falta de tiempo",
+        "ROI poco claro"
+      ],
+      "influence_level": 0.4,
+      "risk_sensitivity": 0.75,
+      "price_sensitivity": 0.5,
+      "channel_habits": [
+        "web/demo"
+      ],
+      "baseline_belief": "Quiere evidencia concreta antes de dejar datos o pagar.",
+      "decision_trigger": "Prueba local de habilidad aplicable y resultado plausible.",
+      "likely_reaction": "interes condicionado",
+      "notes": "Agente sintetico para simulacion, no dato real."
+    },
+    {
+      "agent_id": "A08",
+      "name": "Cazador de promociones",
+      "segment": "Cazador de promociones",
+      "role": "sensible a precio",
+      "motivations": [
+        "mejorar empleabilidad",
+        "reducir incertidumbre"
+      ],
+      "objections": [
+        "certificado generico",
+        "falta de tiempo",
+        "ROI poco claro"
+      ],
+      "influence_level": 0.4,
+      "risk_sensitivity": 0.75,
+      "price_sensitivity": 0.8,
+      "channel_habits": [
+        "Meta"
+      ],
+      "baseline_belief": "Quiere evidencia concreta antes de dejar datos o pagar.",
+      "decision_trigger": "Prueba local de habilidad aplicable y resultado plausible.",
+      "likely_reaction": "interes condicionado",
+      "notes": "Agente sintetico para simulacion, no dato real."
+    },
+    {
+      "agent_id": "A09",
+      "name": "Influenciador experto",
+      "segment": "Influenciador experto",
+      "role": "influenciador",
+      "motivations": [
+        "mejorar empleabilidad",
+        "reducir incertidumbre"
+      ],
+      "objections": [
+        "certificado generico",
+        "falta de tiempo",
+        "ROI poco claro"
+      ],
+      "influence_level": 0.8,
+      "risk_sensitivity": 0.75,
+      "price_sensitivity": 0.5,
+      "channel_habits": [
+        "LinkedIn"
+      ],
+      "baseline_belief": "Quiere evidencia concreta antes de dejar datos o pagar.",
+      "decision_trigger": "Prueba local de habilidad aplicable y resultado plausible.",
+      "likely_reaction": "interes condicionado",
+      "notes": "Agente sintetico para simulacion, no dato real."
+    },
+    {
+      "agent_id": "A10",
+      "name": "Reclutadora pragmatica",
+      "segment": "Influenciador interno",
+      "role": "validadora",
+      "motivations": [
+        "mejorar empleabilidad",
+        "reducir incertidumbre"
+      ],
+      "objections": [
+        "certificado generico",
+        "falta de tiempo",
+        "ROI poco claro"
+      ],
+      "influence_level": 0.8,
+      "risk_sensitivity": 0.75,
+      "price_sensitivity": 0.5,
+      "channel_habits": [
+        "LinkedIn"
+      ],
+      "baseline_belief": "Quiere evidencia concreta antes de dejar datos o pagar.",
+      "decision_trigger": "Prueba local de habilidad aplicable y resultado plausible.",
+      "likely_reaction": "interes condicionado",
+      "notes": "Agente sintetico para simulacion, no dato real."
+    },
+    {
+      "agent_id": "A11",
+      "name": "Usuario saturado",
+      "segment": "Usuario saturado",
+      "role": "indiferente",
+      "motivations": [
+        "mejorar empleabilidad",
+        "reducir incertidumbre"
+      ],
+      "objections": [
+        "certificado generico",
+        "falta de tiempo",
+        "ROI poco claro"
+      ],
+      "influence_level": 0.4,
+      "risk_sensitivity": 0.75,
+      "price_sensitivity": 0.5,
+      "channel_habits": [
+        "Instagram"
+      ],
+      "baseline_belief": "Quiere evidencia concreta antes de dejar datos o pagar.",
+      "decision_trigger": "Prueba local de habilidad aplicable y resultado plausible.",
+      "likely_reaction": "interes condicionado",
+      "notes": "Agente sintetico para simulacion, no dato real."
+    },
+    {
+      "agent_id": "A12",
+      "name": "Planificador largo plazo",
+      "segment": "Planificador de largo plazo",
+      "role": "analitico",
+      "motivations": [
+        "mejorar empleabilidad",
+        "reducir incertidumbre"
+      ],
+      "objections": [
+        "certificado generico",
+        "falta de tiempo",
+        "ROI poco claro"
+      ],
+      "influence_level": 0.4,
+      "risk_sensitivity": 0.75,
+      "price_sensitivity": 0.5,
+      "channel_habits": [
+        "LinkedIn"
+      ],
+      "baseline_belief": "Quiere evidencia concreta antes de dejar datos o pagar.",
+      "decision_trigger": "Prueba local de habilidad aplicable y resultado plausible.",
+      "likely_reaction": "interes condicionado",
+      "notes": "Agente sintetico para simulacion, no dato real."
+    },
+    {
+      "agent_id": "A13",
+      "name": "Experimentador curioso",
+      "segment": "Experimentador curioso",
+      "role": "early adopter",
+      "motivations": [
+        "mejorar empleabilidad",
+        "reducir incertidumbre"
+      ],
+      "objections": [
+        "certificado generico",
+        "falta de tiempo",
+        "ROI poco claro"
+      ],
+      "influence_level": 0.4,
+      "risk_sensitivity": 0.75,
+      "price_sensitivity": 0.5,
+      "channel_habits": [
+        "TikTok"
+      ],
+      "baseline_belief": "Quiere evidencia concreta antes de dejar datos o pagar.",
+      "decision_trigger": "Prueba local de habilidad aplicable y resultado plausible.",
+      "likely_reaction": "interes condicionado",
+      "notes": "Agente sintetico para simulacion, no dato real."
+    },
+    {
+      "agent_id": "A14",
+      "name": "Cliente reactivado",
+      "segment": "Usuario reactivado",
+      "role": "dudoso",
+      "motivations": [
+        "mejorar empleabilidad",
+        "reducir incertidumbre"
+      ],
+      "objections": [
+        "certificado generico",
+        "falta de tiempo",
+        "ROI poco claro"
+      ],
+      "influence_level": 0.4,
+      "risk_sensitivity": 0.75,
+      "price_sensitivity": 0.5,
+      "channel_habits": [
+        "email"
+      ],
+      "baseline_belief": "Quiere evidencia concreta antes de dejar datos o pagar.",
+      "decision_trigger": "Prueba local de habilidad aplicable y resultado plausible.",
+      "likely_reaction": "interes condicionado",
+      "notes": "Agente sintetico para simulacion, no dato real."
+    },
+    {
+      "agent_id": "A15",
+      "name": "Comparador racional",
+      "segment": "Optimizador de valor",
+      "role": "comparador",
+      "motivations": [
+        "mejorar empleabilidad",
+        "reducir incertidumbre"
+      ],
+      "objections": [
+        "certificado generico",
+        "falta de tiempo",
+        "ROI poco claro"
+      ],
+      "influence_level": 0.4,
+      "risk_sensitivity": 0.75,
+      "price_sensitivity": 0.5,
+      "channel_habits": [
+        "YouTube"
+      ],
+      "baseline_belief": "Quiere evidencia concreta antes de dejar datos o pagar.",
+      "decision_trigger": "Prueba local de habilidad aplicable y resultado plausible.",
+      "likely_reaction": "interes condicionado",
+      "notes": "Agente sintetico para simulacion, no dato real."
+    },
+    {
+      "agent_id": "A16",
+      "name": "Par confiable",
+      "segment": "Par confiable",
+      "role": "influenciador cercano",
+      "motivations": [
+        "mejorar empleabilidad",
+        "reducir incertidumbre"
+      ],
+      "objections": [
+        "certificado generico",
+        "falta de tiempo",
+        "ROI poco claro"
+      ],
+      "influence_level": 0.8,
+      "risk_sensitivity": 0.75,
+      "price_sensitivity": 0.5,
+      "channel_habits": [
+        "WhatsApp"
+      ],
+      "baseline_belief": "Quiere evidencia concreta antes de dejar datos o pagar.",
+      "decision_trigger": "Prueba local de habilidad aplicable y resultado plausible.",
+      "likely_reaction": "interes condicionado",
+      "notes": "Agente sintetico para simulacion, no dato real."
+    },
+    {
+      "agent_id": "A17",
+      "name": "Minimalista funcional",
+      "segment": "Minimalista funcional",
+      "role": "pragmatico",
+      "motivations": [
+        "mejorar empleabilidad",
+        "reducir incertidumbre"
+      ],
+      "objections": [
+        "certificado generico",
+        "falta de tiempo",
+        "ROI poco claro"
+      ],
+      "influence_level": 0.4,
+      "risk_sensitivity": 0.75,
+      "price_sensitivity": 0.5,
+      "channel_habits": [
+        "web"
+      ],
+      "baseline_belief": "Quiere evidencia concreta antes de dejar datos o pagar.",
+      "decision_trigger": "Prueba local de habilidad aplicable y resultado plausible.",
+      "likely_reaction": "interes condicionado",
+      "notes": "Agente sintetico para simulacion, no dato real."
+    },
+    {
+      "agent_id": "A18",
+      "name": "Detractor reputacional",
+      "segment": "Detractor reputacional",
+      "role": "bloqueador narrativo",
+      "motivations": [
+        "mejorar empleabilidad",
+        "reducir incertidumbre"
+      ],
+      "objections": [
+        "certificado generico",
+        "falta de tiempo",
+        "ROI poco claro"
+      ],
+      "influence_level": 0.4,
+      "risk_sensitivity": 0.75,
+      "price_sensitivity": 0.5,
+      "channel_habits": [
+        "comentarios"
+      ],
+      "baseline_belief": "Quiere evidencia concreta antes de dejar datos o pagar.",
+      "decision_trigger": "Prueba local de habilidad aplicable y resultado plausible.",
+      "likely_reaction": "resistencia inicial",
+      "notes": "Agente sintetico para simulacion, no dato real."
+    }
+  ]
+}
