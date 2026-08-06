@@ -1,6 +1,6 @@
 ---
 name: social-marketing-sim
-description: "Use when the user asks Codex to run a conversational social marketing simulation: simular campanas, ofertas, posicionamiento, lanzamientos, pricing, rebranding, crisis, audiencias, buyer personas dinamicas, war rooms de marketing, entrevistas a agentes, hipotesis causales, prescripcion de acciones o experimentos. Creates session-local case files when useful, with 15-30 agents, social rounds, interviews, causal hypotheses and actionable war room output. Do not build an app/backend unless separately requested."
+description: "Use when the user asks Codex to run a conversational social marketing simulation: simular campanas, ofertas, posicionamiento, lanzamientos, pricing, rebranding, crisis, audiencias, buyer personas dinamicas, war rooms de marketing, entrevistas a agentes, hipotesis causales, prescripcion de acciones, experimentos A/B or executive research reports. Creates session-local case files when useful, with 15-30 agents, social rounds, interviews, causal hypotheses, actionable war room output and optional client-facing research report. Do not build an app/backend unless separately requested."
 ---
 
 # Social Marketing Sim
@@ -8,6 +8,8 @@ description: "Use when the user asks Codex to run a conversational social market
 ## Objetivo
 
 Convertir un brief de marketing en un mercado social simulado, pequeno y conversacional. Generar agentes, simular reacciones por rondas, entrevistar actores clave, formular hipotesis causales y cerrar con decisiones/experimentos.
+
+Cuando el usuario pida informe, entrega para cliente, reporte ejecutivo, investigacion o venta consultiva, activar tambien el especialista **Research Report Strategist**: convierte la simulacion en un informe ejecutivo profundo, claro, trazable y accionable.
 
 No presentar predicciones como certezas. Separar siempre: observacion simulada, inferencia causal y prescripcion.
 Los archivos locales son memoria de sesion, no una app, backend, dashboard o base de datos.
@@ -22,6 +24,7 @@ Los archivos locales son memoria de sesion, no una app, backend, dashboard o bas
 6. **Causal**: ordenar patrones como hipotesis de mecanismos causa-efecto.
 7. **Prescripcion**: recomendar decisiones con razon social, razon causal, riesgo y experimento.
 8. **War room final**: sintetizar lectura social, narrativas, segmentos prioritarios, decisiones, experimentos y senales de monitoreo.
+9. **Informe de investigacion**: si aplica, redactar `09_research_report.md` para explicar que se hizo, como funciono, agentes, rondas, entrevistas, hipotesis, prescripciones y experimentos A/B en lenguaje ejecutivo.
 
 ## Memoria Local
 
@@ -39,6 +42,7 @@ Estructura esperada:
 06_prescriptions.md
 07_experiments.md
 08_war_room_final.md
+09_research_report.md
 CASE_INDEX.md
 ```
 
@@ -49,6 +53,7 @@ Validar con `scripts/validate_case.py` antes de declarar completo.
 - Leer `references/workflow.md` para ejecutar un caso end-to-end.
 - Leer `references/agent_bank.md` al crear agentes o balancear arquetipos.
 - Leer `references/causal_prescriptive.md` al formular mapa causal, recomendaciones o experimentos.
+- Leer `references/research_reporting.md` cuando el usuario pida un informe para cliente, informe de investigacion, reporte ejecutivo, entregable vendible o explicacion profunda de la simulacion.
 - Leer `references/operator_playbook.md` cuando el usuario pida construir el simulador completo, continuar una sesion o recalibrar.
 - Usar `assets/templates/` como plantillas de archivos de caso.
 - Usar `assets/demo_case/` como ejemplo end-to-end validado.
@@ -64,6 +69,8 @@ Validar con `scripts/validate_case.py` antes de declarar completo.
 - En cada ronda registrar reacciones, razones, citas plausibles, senales comportamentales y patrones emergentes.
 - Entrevistar minimo 7 agentes: 2 promotores, 2 escepticos, 1 bloqueador, 1 influenciador, 1 ambiguo.
 - Toda recomendacion debe tener: evidencia simulada, mecanismo causal, riesgo y experimento.
+- Todo informe de investigacion debe separar: observacion simulada, inferencia, hipotesis causal, prescripcion y validacion pendiente.
+- El Research Report Strategist no debe inventar hallazgos nuevos; solo puede usar brief, agentes, rondas, entrevistas, mapa causal, prescripciones, experimentos y war room.
 - Mantener tono de war room estrategico: directo, vivo, no fantasioso.
 - Evitar recomendaciones genericas que no esten conectadas a comportamiento simulado.
 
@@ -80,3 +87,4 @@ Solo declarar un simulador/caso "completo" cuando existan:
 - Prescripciones.
 - Experimentos.
 - War room final.
+- Informe de investigacion, cuando el usuario lo pida o el caso sea para presentacion a cliente.

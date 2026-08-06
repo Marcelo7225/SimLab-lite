@@ -1,7 +1,7 @@
 cases/
+tmp_cases/
 *.pyc
 __pycache__/
 .DS_Store
 .env
 *.log
-

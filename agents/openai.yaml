@@ -1,4 +1,4 @@
-interface:
+﻿interface:
   display_name: "Social Marketing Sim"
-  short_description: "Simula mercados sociales para marketing."
-  default_prompt: "Simulemos socialmente esta campa�a de marketing y cerremos con decisiones y experimentos."
+  short_description: "Simula mercados sociales y reportes ejecutivos de marketing."
+  default_prompt: "Simulemos socialmente esta campaña de marketing y cerremos con decisiones, experimentos e informe ejecutivo."

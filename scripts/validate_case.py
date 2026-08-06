@@ -18,6 +18,7 @@ REQUIRED_FILES = [
     "06_prescriptions.md",
     "07_experiments.md",
     "08_war_room_final.md",
+    "09_research_report.md",
     "CASE_INDEX.md",
 ]
 
@@ -78,6 +79,7 @@ def main() -> int:
     hypothesis_count = count_markdown_sections(case_dir / "05_causal_map.md", "###")
     prescription_count = count_markdown_sections(case_dir / "06_prescriptions.md", "###")
     experiment_count = count_markdown_sections(case_dir / "07_experiments.md", "## Experimento")
+    report_section_count = count_markdown_sections(case_dir / "09_research_report.md", "## ")
 
     checks = {
         "required_files_present": not missing,
@@ -88,6 +90,7 @@ def main() -> int:
         "has_causal_hypotheses": hypothesis_count >= 3,
         "has_prescriptions": prescription_count >= 3,
         "has_experiments": experiment_count >= 3,
+        "has_research_report": report_section_count >= 10,
     }
     score = round(sum(1 for ok in checks.values() if ok) / len(checks) * 100)
     result = {
@@ -104,6 +107,7 @@ def main() -> int:
             "causal_hypotheses": hypothesis_count,
             "prescriptions": prescription_count,
             "experiments": experiment_count,
+            "research_report_sections": report_section_count,
         },
     }
 
@@ -124,4 +128,3 @@ def main() -> int:
 
 if __name__ == "__main__":
     raise SystemExit(main())
-

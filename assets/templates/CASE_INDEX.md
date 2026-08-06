@@ -16,6 +16,7 @@
 - [ ] 06_prescriptions.md
 - [ ] 07_experiments.md
 - [ ] 08_war_room_final.md
+- [ ] 09_research_report.md
 
 ## Supuestos Activos
 
@@ -28,4 +29,3 @@
 ## Proxima Accion
 
 -
-

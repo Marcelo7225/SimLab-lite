@@ -16,6 +16,7 @@
 - [x] 06_prescriptions.md
 - [x] 07_experiments.md
 - [x] 08_war_room_final.md
+- [x] 09_research_report.md
 
 ## Supuestos Activos
 

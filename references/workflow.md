@@ -151,6 +151,27 @@ Escribir `08_war_room_final.md` con:
 8. Senales de monitoreo.
 9. Proxima ronda.
 
+### 10. Informe De Investigacion
+
+Cuando el usuario pida un informe para cliente, reporte ejecutivo, investigacion profunda o entregable vendible, escribir `09_research_report.md`.
+
+Leer `references/research_reporting.md` antes de redactarlo.
+
+El informe debe explicar en profundidad:
+
+- Que se hizo.
+- Como funciono la simulacion.
+- Los agentes.
+- Las rondas.
+- Las entrevistas.
+- Las hipotesis causales.
+- Las prescripciones.
+- Los experimentos A/B.
+- Implicaciones para el cliente.
+- Riesgos, limites y proximos pasos.
+
+El informe debe ser claro para un ejecutivo sin conocimiento tecnico. Debe vender el valor de la investigacion sin presentar agentes sinteticos como clientes reales.
+
 ## Checkpoints No Bloqueantes
 
 Usar checkpoints como decisiones registradas, no como frenos:
@@ -177,7 +198,7 @@ Formato:
 Una simulacion esta completa solo si existe una cadena:
 
 ```text
-brief -> supuestos -> mapa social -> agentes -> rondas -> entrevistas -> causalidad -> prescripciones -> experimentos -> war room
+brief -> supuestos -> mapa social -> agentes -> rondas -> entrevistas -> causalidad -> prescripciones -> experimentos -> war room -> informe, si aplica
 ```
 
 Minimos:
@@ -189,6 +210,7 @@ Minimos:
 - 5 prescripciones o decisiones.
 - 5 experimentos.
 - Riesgos y senales de monitoreo.
+- Informe ejecutivo de investigacion cuando el caso sea para cliente o presentacion.
 
 Cada experimento debe responder:
 

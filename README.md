@@ -7,6 +7,8 @@ SimLab-lite convierte un brief de marketing en una simulación social estructura
 
 No pretende adivinar el mercado. Sirve para pensar mejor antes de gastar dinero, ordenar supuestos, detectar fricción social y diseñar pruebas con disciplina causal.
 
+Ahora también incluye un **Research Report Strategist**: un especialista que transforma la simulación en un informe ejecutivo de investigación, pensado para presentar el trabajo a clientes o equipos directivos.
+
 ## Qué Es
 
 ```text
@@ -32,6 +34,9 @@ Decisiones + experimentos
        |
        v
 War room estratégico final
+       |
+       v
+Informe ejecutivo de investigación
 ```
 
 ## Para Qué Sirve
@@ -44,6 +49,7 @@ SimLab-lite es útil cuando necesitas explorar preguntas como:
 - Qué segmentos reaccionan distinto ante precio, promesa, canal o prueba social.
 - Qué experimentos conviene correr primero.
 - Qué decisiones estratégicas tienen mayor potencial y menor riesgo.
+- Cómo explicar el rigor de la simulación en un informe vendible para cliente.
 
 ## Lo Que Incluye
 
@@ -54,6 +60,7 @@ SimLab-lite es útil cuando necesitas explorar preguntas como:
 | `references/workflow.md` | Flujo completo de operación por fases. |
 | `references/agent_bank.md` | Banco de 24 arquetipos de agentes de marketing. |
 | `references/causal_prescriptive.md` | Marco causal y prescriptivo para decisiones y experimentos. |
+| `references/research_reporting.md` | Guía del especialista en informes ejecutivos de investigación. |
 | `references/operator_playbook.md` | Guía práctica para correr sesiones, recalibrar y cerrar casos. |
 | `assets/templates/` | Plantillas locales para cada sesión. |
 | `assets/demo_case/` | Caso de demostración ya completo. |
@@ -95,6 +102,7 @@ Luego abre Codex y pídele algo como:
 Usa social-marketing-sim.
 Simulemos una campaña de marketing para una nueva oferta B2B.
 Quiero 20 agentes, 5 rondas, entrevistas, mapa causal, decisiones y experimentos.
+Incluye informe ejecutivo de investigación para cliente.
 ```
 
 Codex leerá el `SKILL.md`, usará las referencias necesarias y podrá crear archivos locales por sesión.
@@ -121,6 +129,7 @@ Usa el flujo del SKILL.md y las referencias del repo.
 Crea una simulación social de marketing con memoria local por sesión,
 agentes sintéticos, rondas, entrevistas, hipótesis causales,
 prescripciones y war room final.
+Si el caso es para presentar a cliente, genera también el informe ejecutivo de investigación.
 ```
 
 ## Uso Rápido
@@ -164,6 +173,7 @@ cases/mi-campana/
   06_prescriptions.md
   07_experiments.md
   08_war_room_final.md
+  09_research_report.md
   CASE_INDEX.md
   session.json
   memory/
@@ -200,6 +210,9 @@ cases/mi-campana/
 8. **War room**
    Cierra con una lectura estratégica viva, pero disciplinada: qué hacer, qué no hacer, qué probar y qué observar.
 
+9. **Informe de investigación**
+   Explica qué se hizo, cómo funcionó la simulación, qué agentes participaron, qué ocurrió en las rondas, qué revelaron las entrevistas, qué hipótesis causales surgieron y qué experimentos A/B se recomiendan.
+
 ## Salida Final Esperada
 
 Un buen cierre de SimLab-lite debe incluir:
@@ -213,6 +226,7 @@ Un buen cierre de SimLab-lite debe incluir:
 - Objeciones críticas.
 - Riesgos de interpretación.
 - Señales que deberían medirse en el mundo real.
+- Informe ejecutivo de investigación cuando el resultado deba vender, justificar o presentar el rigor del trabajo.
 
 ## Principios
 
@@ -242,6 +256,7 @@ Quiero:
 - Decisiones prescriptivas.
 - 5 experimentos.
 - War room final con disciplina causal.
+- Informe ejecutivo de investigación para cliente.
 ```
 
 ## Estado Del Proyecto
@@ -249,4 +264,3 @@ Quiero:
 SimLab-lite está pensado como versión limpia y ligera, inspirada en ideas de simulación social y sistemas causales/prescriptivos, pero enfocada en uso conversacional.
 
 No incluye interfaz gráfica, servidor, base de datos ni ejecución estadística pesada. Su valor está en la estructura: ayuda a pensar una campaña como un sistema social, no solo como una lista de copies.
-
